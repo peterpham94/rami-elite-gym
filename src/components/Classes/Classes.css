@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Michroma';
+  src: url('/public/fonts/Michroma-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{
+  font-family: 'Michroma';
+}
+
+h2{
+  font-family: 'Michroma';
+}
+
+.our-services-wrapper {
+    text-align: center; /* Center the content */
+    margin-bottom: 0; /* Remove bottom margin */
+    background-image: url('/public/assets/images/gym-services-bg-lg.jpg'); /* Set background image */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center bottom; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 10px 5px; /* Further reduce padding to make the container smaller */
+    color: white; /* Ensure text is readable on the background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; /* Further reduce height to make the container smaller */
+}
+
+.our-services-container {
+    background-color: rgba(0, 0, 0, 0.5); /* More transparent black background */
+    padding: 40px 20px; /* Add padding to ensure text is readable */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    max-width: 800px; /* Increase the maximum width */
+    width: 100%; /* Ensure it takes full width up to the max-width */
+    box-sizing: border-box; /* Include padding in the width */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add faint white glow */
+}
+
+.our-services {
+    color: white; /* Ensure text is readable on the background image */
+}
+
+.class-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .class-column {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* More transparent black background */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add some shadow for better appearance */
+    margin-bottom: 20px; /* Add some space below the columns */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+  }
+  
+  .taekwondo-column {
+    background-image: url('/public/assets/images/gym-taekwondo-service2.jpg'); /* Set the background image for Taekwondo */
+}
+  
+  .muay-thai-column {
+    background-image: url('/public/assets/images/gym-muay-thai-service2.jpg') /* Set the background image for Muay Thai */
+}
+  
+  .taekwondo-content-wrapper,
+  .muay-thai-content-wrapper {
+    text-align: center; /* Center the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+  }
+
+  .learn-more-button {
+    background-color: rgba(0, 255, 0, 0.5); /* Transparent green background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Make the button round */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Font size for the button text */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  .learn-more-button:hover {
+    background-color: rbga(0, 255, 0, 0.7);
+  }

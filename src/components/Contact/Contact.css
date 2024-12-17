@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Michroma';
+  src: url('/public/fonts/Michroma-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{
+  font-family: 'Michroma';
+}
+
+body {
+    background-color: #262729; /* Set background color for the entire page */
+    color: white; /* Set default text color to white for better contrast */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a default font family */
+  }
+
+  .contact-page{
+    background-image: url('/public/assets/images/taekwondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-container {
+    width: 50%; /* Set width to 50% for desktop */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: transparent; /* Background color for the contact box */
+    border-radius: 20px; /* Add rounded corners */
+    text-align: center; /* Center the text */
+  }
+  
+  .contact-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 150px; /* Set a fixed width for the profile picture */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px; /* Add some space below the image */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels and inputs to the left */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  button.submit-button {
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    padding: 15px 60px; /* Increase padding to make the button wider */
+    border: none;
+    border-radius: 70px; /* Make the button more curved */
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for better readability */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  button.submit-button:hover {
+    background-color: #f0f0f0; /* Button hover color */
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      width: 90%; /* Set width to 80% for mobile */
+    }
+  }

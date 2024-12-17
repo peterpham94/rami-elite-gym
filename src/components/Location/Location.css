@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Michroma';
+  src: url('/public/fonts/Michroma-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2{
+  font-family: 'Michroma';
+}
+
+
+.location-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh; /* Reduce height to half the viewport height */
+}
+
+.location-info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('/public/assets/images/location-info-bg.jpg'); /* Set background image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.location-info {
+  background-color: rgba(0, 0, 0, 0.5); /* More transparent black background */
+  padding: 40px; /* Increase padding to make the box larger */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  color: white; /* Ensure text is readable on the background image */
+  text-align: center; /* Center text */
+}
+
+.location-map {
+  width: 50%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .location-container {
+    flex-direction: column;
+    height: 85vh; /* Increase height for mobile view */
+  }
+
+  .location-info-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .location-map {
+    width: 100%;
+    height: 60%; /* Increase height for mobile view */
+  }
+}

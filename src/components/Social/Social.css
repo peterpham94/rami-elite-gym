@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Michroma';
+  src: url('/public/fonts/Michroma-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{
+  font-family: 'Michroma';
+}
+
+
+body {
+  background-color: #262729; /* Set background color for the entire page */
+  color: white; /* Set default text color to white for better contrast */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font family */
+}
+
+.social-container {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.instagram-posts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.instagram-post {
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .instagram-posts {
+    justify-content: center; /* Center the posts on mobile view */
+  }
+
+  .instagram-post {
+    width: 100%; /* Make each post take full width on mobile view */
+    max-width: 320px; /* Set a maximum width for the posts */
+  }
+}

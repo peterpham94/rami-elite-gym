@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Michroma';
+  src: url('/public/fonts/Michroma-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2{
+  font-family: 'Michroma';
+}
+
+
+body {
+  background-color: #262729; /* Set background color for the entire page */
+  color: white; /* Set default text color to white for better contrast */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font family */
+}
+
+.container {
+  padding-top: 20px; /* Add some padding at the top */
+}
+
+.custom-container {
+  max-width: 80%; /* Make the container smaller on desktop */
+}
+
+@media (min-width: 1024px) {
+  .custom-container {
+    max-width: 60%; /* Further reduce the width on larger screens */
+  }
+}
+
+.overview-box {
+  background-color: #262729; /* Background color for the overview box */
+  color: white; /* Text color */
+  padding: 20px; /* Add some padding inside the box */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  text-align: center; /* Center the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for better appearance */
+  height: 100%; /* Ensure the box takes the full height of the grid cell */
+}
+
+.overview-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.overview-content p {
+  margin: 0;
+}

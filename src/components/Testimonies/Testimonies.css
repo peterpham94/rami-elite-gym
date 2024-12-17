@@ -1,0 +1,121 @@
+body {
+  background-color: #262729; /* Set background color for the entire page */
+  color: white; /* Set default text color to white for better contrast */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font family */
+}
+
+.testimonies-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px; /* Add some padding for better spacing */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  height: auto; /* Default height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+@media (min-width: 1024px) {
+  .testimonies-container {
+    width: 90%; /* Make the container slightly larger on desktop browsers */
+    height: 50vh; /* Make the container taller on desktop browsers */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonies-container {
+    width: 95%; /* Make the container wider on mobile view */
+  }
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create 4 columns */
+  gap: 20px;
+}
+
+.review {
+  background-color: white; /* White background for the review box */
+  color: black; /* Black text color for better contrast */
+  padding: 20px;
+  margin: 10px;
+  height: 200px; /* Set a fixed height for the review box */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow values for more prominence */
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+}
+
+.reviewer-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-rating {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ccc; /* Grey color for empty stars */
+}
+
+.star.filled {
+  color: #FFD700; /* Yellow color for filled stars */
+}
+
+.review-text {
+  overflow-y: auto; /* Make the paragraph scrollable if it's too long */
+  max-height: 100px; /* Set a maximum height for the paragraph */
+}
+
+.reviews-carousel {
+  display: none; /* Hide carousel on desktop view */
+}
+
+@media (max-width: 1024px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+
+  .review{
+    background-color: #262729; /* Change background color to match the page */
+    color: white;
+    box-shadow: none;
+
+  }
+  .reviews-grid {
+    display: none; /* Hide grid on mobile view */
+  }
+
+  .reviews-carousel {
+    display: block; /* Show carousel on mobile view */
+  }
+
+  .review-header {
+    justify-content: center; /* Center the review header content */
+  }
+
+  .review-header img {
+    display: none; /* Hide image on mobile view */
+  }
+
+  .review-header h3 {
+    font-size: 1.2em; /* Adjust font size for mobile view */
+    text-align: center; /* Center the text */
+  }
+}
