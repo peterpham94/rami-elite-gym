@@ -3,6 +3,8 @@ import './muay-thai-page.css';
 import Header from '../../components/Header/Header.js'; // Adjust the import path as needed
 import instructorImage1 from '../../assets/images/instructor-a-j.jpg';
 import Join from '../../components/Join/Join.js';
+import MTClass from '../../components/MTClass/MTClass.js';
+import Freedom from '../../components/Freedom/Freedom.js';
 
 const images = [instructorImage1];
 
@@ -21,6 +23,8 @@ const MuayThaiPage = () => {
     <div>
       <Header />
       <Join />
+      <MTClass />
+      <Freedom />
     </div>
   );
 };
