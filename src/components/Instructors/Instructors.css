@@ -1,0 +1,13 @@
+.instructors-container {
+    margin-top: 50px;
+  }
+  
+  .card {
+    border: none; /* Remove the border */
+    box-shadow: none; /* Remove any box-shadow */
+  }
+  
+  .card-img-top {
+    height: 400px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the images cover the entire area */
+  }

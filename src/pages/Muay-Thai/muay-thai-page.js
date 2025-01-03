@@ -5,6 +5,7 @@ import instructorImage1 from '../../assets/images/instructor-a-j.jpg';
 import Join from '../../components/Join/Join.js';
 import MTClass from '../../components/MTClass/MTClass.js';
 import Freedom from '../../components/Freedom/Freedom.js';
+import Instructors from '../../components/Instructors/Instructors.js'
 
 const images = [instructorImage1];
 
@@ -25,6 +26,7 @@ const MuayThaiPage = () => {
       <Join />
       <MTClass />
       <Freedom />
+      <Instructors />
     </div>
   );
 };
