@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Michroma';
+  src: url('/public/fonts/Michroma-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{
+  font-family: 'Michroma';
+}
+
+h3{
+  font-family: 'Michroma';
+}
+
+.scheduler-container {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.class-schedule {
+  margin-top: 20px;
+}
+
+.class-schedule h3 {
+  margin: 10px 0;
+}
+
+.class-schedule p {
+  margin: 5px 0;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the calendar vertically */
+  height: 100%; /* Ensure the calendar container takes up the full height */
+}
+
+.calendar-container .react-calendar {
+  width: 100%;
+  max-width: 600px; /* Increase max width for the calendar */
+  background-color: transparent; /* Make the calendar background transparent */
+  border: none; /* Remove the border */
+}
+
+.calendar-container .react-calendar__tile {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for calendar tiles */
+  color: white; /* White text color for better contrast */
+}
+
+.calendar-container .react-calendar__tile--active {
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background for active tile */
+}
+
+.calendar-container .react-calendar__tile--now {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for current day tile */
+}
+
+.calendar-container .react-calendar__navigation button {
+  color: white; /* White color for the navigation buttons (arrows) */
+}
+
+.calendar-container .react-calendar__navigation button:disabled {
+  color: rgba(255, 255, 255, 0.5); /* Semi-transparent white for disabled navigation buttons */
+}
+
+.calendar-container .react-calendar__navigation__label {
+  color: white; /* White color for the month text */
+}
+
+.table {
+  background-color: transparent; /* Make the table background transparent */
+}
+
+.table th,
+.table td {
+  background-color: #262729;
+  color: white; /* White text color for better contrast */
+}
+
+.table th[scope="row"] {
+  font-weight: normal; /* Make all scope="row" elements non-bold */
+}
+
+@media (min-width: 768px) {
+  .calendar-container .react-calendar {
+    max-width: 800px; /* Make the calendar larger on desktop */
+  }
+}

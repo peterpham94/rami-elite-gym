@@ -6,6 +6,8 @@ import Join from '../../components/Join/Join.js';
 import MTClass from '../../components/MTClass/MTClass.js';
 import Freedom from '../../components/Freedom/Freedom.js';
 import Instructors from '../../components/Instructors/Instructors.js'
+import Scheduler from '../../components/Schedule/Scheduler.js';
+
 
 const images = [instructorImage1];
 
@@ -25,6 +27,7 @@ const MuayThaiPage = () => {
       <Header />
       <Join />
       <MTClass />
+      <Scheduler />
       <Freedom />
       <Instructors />
     </div>
