@@ -5,13 +5,45 @@
   font-style: normal;
 }
 
+/* Ensure the entire container has a white background */
+.overview-container {
+  background-color: white;
+  color: #262729; /* Adjust text color if needed */
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+/* Additional styles for the Overview component */
+.overview-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overview-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overview-box h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.overview-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 h2{
   font-family: 'Michroma';
 }
 
 
 body {
-  background-color: #262729; /* Set background color for the entire page */
+  background-color: white; /* Set background color for the entire page */
   color: white; /* Set default text color to white for better contrast */
   margin: 0; /* Remove default margin */
   font-family: Arial, sans-serif; /* Set a default font family */

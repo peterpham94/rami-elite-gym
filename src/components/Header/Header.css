@@ -1,56 +1,25 @@
-/* Step 1: Define the custom font */
-@font-face {
-    font-family: "MyCustomFont";
-    src: url("/Users/peterpham/rami-elite/public/fonts/Dream MMA.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+.header-container {
+  background-color: transparent; /* Make the header background transparent */
+  position: fixed; /* Fix the header at the top */
+  width: 100%; /* Ensure the header spans the full width */
+  z-index: 1000; /* Ensure the header is above other content */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  padding: 1rem 2rem; /* Add some padding for spacing */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Default logo height */
+  transition: height 0.3s ease; /* Smooth transition for scaling */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none; /* Hide the logo on small screens */
   }
-  
-  /* Step 2: Apply the custom font to the header's navigation menu */
-  header ul {
-    font-family: "MyCustomFont", sans-serif; /* Apply the custom font */
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-  }
-  
-  header li {
-    font-family: "MyCustomFont", sans-serif; /* Apply the custom font */
-    padding: 10px 20px; /* Optional: Adjust spacing for each list item */
-  }
-  
-  header a {
-    font-family: "MyCustomFont", sans-serif; /* Apply the custom font to the links */
-    text-decoration: none; /* Optional: Remove underline from links */
-    color: green; /* Optional: Change link color */
-  }
-  
-  header a:hover {
-    color: green; /* Optional: Change color on hover */
-  }
-  
-  /* Step 3: Hamburger menu styles */
-  header button svg {
-    fill: black; /* Ensure hamburger icon is black */
-    width: 30px;
-    height: 30px;
-  }
-  
-  /* Additional styles for mobile dropdown menu */
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-  
-  header nav a {
-    text-decoration: none;
-    padding: 10px 15px;
-    color: green;
-  }
-  
-  header nav a:hover {
-    color: red;
-  }
-  
+}

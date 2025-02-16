@@ -1,62 +1,25 @@
 import React from "react";
-import { useMediaQuery } from "react-responsive";
+import './LandingBanner.css'; // Import the CSS file
 
 const LandingBanner = () => {
-  // Determine if the screen size is mobile
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-
-  // Image source for mobile and desktop
-  const backgroundImage = isMobile
-    ? "/assets/images/rami-mobile.jpg" // Replace with your mobile image path
-    : "/assets/images/rami-desktop.jpg"; // Replace with your desktop image path
-
   return (
-    <div
+    <div style={{ position: 'relative', paddingTop: '51.354166666666664%' }}>
+    <iframe
+      src="https://customer-2ubdanfjf4eg3lw0.cloudflarestream.com/4716b8a1ad09e71758137fc1fc84e2b7/iframe?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-2ubdanfjf4eg3lw0.cloudflarestream.com%2F4716b8a1ad09e71758137fc1fc84e2b7%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false"
+      loading="lazy"
       style={{
-        width: "100%",
-        height: isMobile ? "45svh" : "70vh",
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: "cover", // Use "cover" to ensure the image covers the entire container
-        backgroundPosition: isMobile ? "center" : "center 80%", // Push the image down on desktop view
-        backgroundRepeat: "no-repeat", // Prevent tiling
-        position: "relative",
+        border: 'none',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        height: '100%',
+        width: '100%'
       }}
-    >
-      {/* Content Overlay */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          zIndex: 10,
-          textAlign: "center",
-        }}
-      >
-        <h1 style={{ color: "white", fontSize: "2rem", fontWeight: "bold" }}>
-          {/* Optional heading */}
-        </h1>
-        <p style={{ color: "white", marginTop: "5rem", fontSize: "1.25rem" }}>
-          {/* Optional paragraph */}
-        </p>
-        <button
-          onClick={() => window.location.href = "#learn-more"}
-          style={{
-            marginTop: "1.5rem",
-            backgroundColor: "white",
-            color: "black",
-            padding: "0.5rem 1.5rem", // Smaller button
-            borderRadius: "50px", // Oval shape
-            cursor: "pointer",
-            border: "2px solid black",
-          }}
-        >
-          Learn More
-        </button>
-      </div>
-    </div>
+      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+      allowFullScreen
+      title="Cloudflare Stream Video"
+    ></iframe>
+  </div>
   );
 };
 

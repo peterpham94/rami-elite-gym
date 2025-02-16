@@ -10,7 +10,7 @@ import Scheduler from '../../components/Schedule/Scheduler.js';
 const HomePage = () => {
   return (
     <div>
-        <Header />
+        <Header/>
         <LandingBanner />
         <Overview />
         <Classes />

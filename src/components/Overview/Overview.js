@@ -7,7 +7,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import Carous
 
 const Overview = () => {
   return (
-    <div>
+    <div className='overview-container'>
       <div className="container mt-4">
         <div className="row d-none d-md-flex">
           <div className="col-md-3 col-6 mb-4">
