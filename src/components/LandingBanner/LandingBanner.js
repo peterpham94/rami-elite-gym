@@ -16,7 +16,8 @@ const LandingBanner = () => {
         style={{ border: 'none', position: 'absolute', top: 0, left: 0, height: '100%', width: '100%' }}
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
         allowFullScreen
-        muted={isMobile} // Ensure the video is muted on mobile devices
+        muted
+        playsInline={isMobile} // Ensure the video plays inline on mobile devices
       ></iframe>
     </div>
   );
