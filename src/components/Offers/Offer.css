@@ -1,0 +1,24 @@
+.offers-container {
+    background-color: black; /* Set the background color to black */
+    padding: 2rem; /* Add some padding for spacing */
+    width: 100%; /* Ensure the container takes up the entire width */
+    margin-top: 0; /* Remove any top margin */
+    padding-top: 0; /* Remove any top padding */
+  }
+  
+  .offers-container h2 {
+    margin-top: 0; /* Remove any top margin from the heading */
+    padding-top: 0; /* Remove any top padding from the heading */
+  }
+
+  .text-center {
+    text-align: center; /* Center align the text */
+    vertical-align: middle;
+    margin-top: 7rex;
+  }
+  
+  @media (max-width: 768px) {
+    .offers-container .form-group {
+      width: 100%; /* Ensure each form group takes up the entire row on mobile view */
+    }
+  }

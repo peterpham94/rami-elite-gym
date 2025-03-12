@@ -1,24 +1,27 @@
 import React from "react";
-import { useMediaQuery } from "react-responsive";
 import './LandingBanner.css'; // Import the CSS file
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const LandingBanner = () => {
-  // Determine if the screen size is mobile
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-
   return (
-    <div style={{ position: 'relative', paddingTop: isMobile ? '216.66666666666666%' : '51.354166666666664%' }}>
+    <div className="videoWrapper">
       <iframe
-        src={isMobile 
-          ? "https://customer-2ubdanfjf4eg3lw0.cloudflarestream.com/e1ffca501313236c85ac69d6669589c5/iframe?muted=true&preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-2ubdanfjf4eg3lw0.cloudflarestream.com%2Fe1ffca501313236c85ac69d6669589c5%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false"
-          : "https://customer-2ubdanfjf4eg3lw0.cloudflarestream.com/603e6ad44c56676adc6396a6be9715b7/iframe?loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-2ubdanfjf4eg3lw0.cloudflarestream.com%2F603e6ad44c56676adc6396a6be9715b7%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false"}
-        loading="lazy"
-        style={{ border: 'none', position: 'absolute', top: 0, left: 0, height: '100%', width: '100%' }}
+        src="https://customer-2ubdanfjf4eg3lw0.cloudflarestream.com/88744dab89341d03ff7d77dffd7feba2/iframe?preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-2ubdanfjf4eg3lw0.cloudflarestream.com%2F88744dab89341d03ff7d77dffd7feba2%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false"
+        loading="lazy" 
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
         allowFullScreen
         muted
-        playsInline={isMobile} // Ensure the video plays inline on mobile devices
+        playsInline
       ></iframe>
+      <div className="landing-banner-text">
+        <h1>Train and become Elite at Philadelphia's premier MMA center</h1>
+        <h4>Over 25 years experiences with champion trained coaches in Muay Thai, Ju-Jitsu, Taekwondo and wrestling</h4>
+        <div className="contact-info">
+          <FontAwesomeIcon icon={faPhone} className="phone-icon" />
+          <a href="tel:+15513393399" className="phone-link">(551) 339-3399</a>
+        </div>
+      </div>
     </div>
   );
 };

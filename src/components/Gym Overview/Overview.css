@@ -1,0 +1,28 @@
+/* Import the Blackpine font */
+@font-face {
+    font-family: 'Blackpine';
+    src: url('/public/fonts/Blackpine-4BEVW.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .overview-container {
+    padding: 2rem; /* Add some padding for spacing */
+    background-color: #f9f9f9; /* Set a light background color */
+    text-align: center; /* Center align the text */
+  }
+  
+  .our-services h1 {
+    font-family: 'Blackpine', sans-serif; /* Use the Blackpine font */
+    font-size: 8rem; /* Set the font size for the heading */
+    margin-bottom: 1rem; /* Add some space below the heading */
+    color: red; /* Set the text color to red */
+  }
+  
+  .our-services p {
+    font-size: 1.25rem; /* Set the font size for the paragraph */
+    line-height: 1.6; /* Set the line height for better readability */
+    color: #666; /* Set the text color for the paragraph */
+    max-width: 800px; /* Limit the width of the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+  }

@@ -1,25 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header-container {
   background-color: transparent; /* Make the header background transparent */
   position: fixed; /* Fix the header at the top */
   width: 100%; /* Ensure the header spans the full width */
   z-index: 1000; /* Ensure the header is above other content */
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: space-between; /* Space out the logo and navigation */
+  align-items: center; /* Center items vertically */
   padding: 1rem 2rem; /* Add some padding for spacing */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background and shadow */
+}
+
+.header-container.scrolled {
+  background-color: white; /* Change background to white when scrolled */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure the nav container spans the full width */
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  margin-right: auto; /* Push the logo to the left */
 }
 
 .logo {
-  height: 50px; /* Default logo height */
-  transition: height 0.3s ease; /* Smooth transition for scaling */
+  height: 40px; /* Adjust the logo height as needed */
+}
+
+.nav-list {
+  list-style: none; /* Remove default list styling */
+  display: flex;
+  gap: 2rem; /* Add space between the links */
+}
+
+.nav-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Set link color to white */
+  font-size: 1rem; /* Set font size */
+  font-weight: bold; /* Make the font bold */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.header-container.scrolled .nav-item a {
+  color: black; /* Change link color to black when scrolled */
+}
+
+.nav-item a:hover {
+  color: #12A20D; /* Change link color on hover */
+}
+
+.pricing-button {
+  background-color: green; /* Set button background color */
+  color: white; /* Set button text color */
+  padding: 0.5rem 1rem; /* Add padding to the button */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.pricing-button:hover {
+  background-color: darkgreen; /* Change button background color on hover */
+}
+
+.menu-toggle {
+  display: none; /* Hide the menu toggle by default */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.menu-toggle.open .menu-icon {
+  background-color: black;
 }
 
 @media (max-width: 768px) {
-  .logo {
-    display: none; /* Hide the logo on small screens */
+  .nav-list {
+    display: none; /* Hide the navigation links by default on small screens */
+    flex-direction: column; /* Stack links vertically on small screens */
+    gap: 1rem; /* Adjust space between the links */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 2rem;
+  }
+
+  .nav-list.open {
+    display: flex; /* Show the navigation links when the menu is open */
+  }
+
+  .nav-item a {
+    color: black; /* Set link color to black on small screens */
+  }
+
+  .menu-toggle {
+    display: flex; /* Show the menu toggle on small screens */
   }
 }

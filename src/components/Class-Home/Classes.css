@@ -1,0 +1,79 @@
+/* Remove container padding */
+.classes-container {
+    background-color: #F9F9F9;
+    padding: 0; /* Remove extra padding */
+    margin: 0;
+    width: 100%;
+}
+
+/* Remove row margin */
+.row {
+    margin: 0 !important; 
+}
+
+/* Remove column padding */
+[class*="col-"] {
+    padding: 5px; /* Small padding to keep slight separation */
+}
+
+/* Adjust card styling */
+.class-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    height: 450px; /* Increased height */
+    overflow: hidden;
+    margin: 0 auto; /* Center cards */
+}
+
+
+
+.class-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    z-index: 1;
+}
+
+.class-card:hover::before {
+    filter: grayscale(0%);
+}
+
+.class-card .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.class-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    margin: 0;
+}
+
+.class-card .card-text {
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+}
