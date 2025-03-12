@@ -7,7 +7,7 @@ const LandingBanner = () => {
   return (
     <div className="videoWrapper">
       <iframe
-        src="https://customer-2ubdanfjf4eg3lw0.cloudflarestream.com/88744dab89341d03ff7d77dffd7feba2/iframe?preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-2ubdanfjf4eg3lw0.cloudflarestream.com%2F88744dab89341d03ff7d77dffd7feba2%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=false"
+        src="https://customer-2ubdanfjf4eg3lw0.cloudflarestream.com/88744dab89341d03ff7d77dffd7feba2/iframe?preload=true&loop=true&autoplay=true&poster=https%3A%2F%2Fcustomer-2ubdanfjf4eg3lw0.cloudflarestream.com%2F88744dab89341d03ff7d77dffd7feba2%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600&controls=true"
         loading="lazy" 
         allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
         allowFullScreen
