@@ -26,7 +26,7 @@ const Location = () => {
               <h2>Rami Elite</h2>
               <p>Expert Muay Thai and Taekwondo programs for kids and adults.</p>
               <p>Address: 7249 Rising Sun Ave, Philadelphia, PA 19111</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>Phone: (551) 339-3339</p>
               <img src="/path/to/your/image.jpg" alt="Gym Image" style="width: 100%; height: auto;"/>
             </div>
           `,
@@ -55,7 +55,7 @@ const Location = () => {
         <div className="location-info">
           <h1>Our Location</h1>
           <p>Address: 7249 Rising Sun Ave, Philadelphia, PA 19111</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Phone: (551) 339-3339</p>
           <h2>Hours</h2>
           <p>Monday - Friday: 6am - 10pm</p>
           <p>Saturday: 8am - 8pm</p>

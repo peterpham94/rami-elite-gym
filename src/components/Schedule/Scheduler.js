@@ -13,6 +13,7 @@ const classSchedules = {
   },
   '1:00pm - 3:00pm': {
     Saturday: 'Muay Thai - Advance',
+    Sunday: 'Muay Thai - Advance'
   },
   '5:00pm - 6:00pm': {
     Monday: 'Taekwondo - Mixed Belts',
@@ -70,6 +71,7 @@ const Scheduler = () => {
             key={classType}
             className={`btn btn-link ${selectedClass === classType ? 'active' : ''}`}
             onClick={() => setSelectedClass(classType)}
+            style={{ color: 'black' }}
           >
             {classType}
           </button>

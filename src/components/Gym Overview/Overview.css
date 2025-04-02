@@ -26,3 +26,14 @@
     max-width: 800px; /* Limit the width of the paragraph */
     margin: 0 auto; /* Center the paragraph */
   }
+
+  
+  .our-services h1 .mobile-hide {
+    display: inline; /* Default display for larger screens */
+  }
+  
+  @media (max-width: 768px) {
+    .our-services h1 .mobile-hide {
+      display: none; /* Hide the word "Our" on mobile view */
+    }
+  }

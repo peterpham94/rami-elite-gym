@@ -1,0 +1,9 @@
+.offers-container {
+    display: block; /* Default display for desktop view */
+  }
+  
+  @media (max-width: 768px) {
+    .offers-container {
+      display: none; /* Hide the Offers component on mobile view */
+    }
+  }

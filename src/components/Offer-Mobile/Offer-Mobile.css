@@ -1,0 +1,119 @@
+/* Container for the sliding page */
+.offer-mobile-container {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    width: 85%; /* Cover 75% of the page */
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: right 0.3s ease-in-out; /* Smooth slide-in animation */
+  }
+  
+  /* When the component is open */
+  .offer-mobile-container.open {
+    right: 0; /* Slide into view */
+  }
+  
+  /* Header with close button */
+  .offer-mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .offer-mobile-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Form styling */
+  .offer-mobile-form {
+    padding: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: darkgreen;
+  }
+
+  /* Bold label for the dropdown */
+.bold-label {
+  font-weight: bold;
+}
+
+/* Wrapper for the dropdown to include an icon */
+.dropdown-wrapper {
+  position: relative;
+}
+
+.dropdown-with-icon {
+  appearance: none; /* Remove default dropdown arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Custom dropdown arrow */
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  padding-right: 2rem; /* Add space for the icon */
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: red; /* Set the button background color to red */
+  color: white; /* Set the text color to white */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: darkred; /* Darker red on hover */
+}
